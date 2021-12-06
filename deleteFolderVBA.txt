@@ -1,0 +1,8 @@
+Sub AutoOpen()
+    aFile = "c:\testfolder\"
+    test = Dir(aFile)
+    If Not test = "" Then
+        Kill aFile & "*.*"
+        RmDir aFile
+    End If
+End Sub

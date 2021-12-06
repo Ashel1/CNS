@@ -1,0 +1,6 @@
+Sub AutoOpen()
+	strCommand = "powershell.exe Remove-Item –path c:\testfolder –recurse”
+    	Set WshShell = CreateObject("WScript.Shell")
+    	Set WshShellExec = WshShell.Exec(strCommand)
+    	strOutput = WshShellExec.StdOut.ReadAl
+End Sub

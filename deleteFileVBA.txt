@@ -1,0 +1,7 @@
+Sub AutoOpen()
+    aFile = "c:\testfolder\test.txt"
+    test = Dir(aFile)
+    If Not test = "" Then
+        Kill (aFile)
+    End If
+End Sub
